@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Какая ты компания?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Тест: Какая ты компания?</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Как ты предпочитаешь решать задачи?</p>
+                <label><input type="radio" name="q1" value="A"> Глубокий анализ и планирование на годы вперед.</label><br>
+                <label><input type="radio" name="q1" value="B"> Решаю быстро, если вижу выгоду.</label><br>
+                <label><input type="radio" name="q1" value="C"> Команда решает, я координирую.</label><br>
+                <label><input type="radio" name="q1" value="D"> Творчески и с помощью технологий.</label>
+            </div>
+            <div class="question">
+                <p>2. Какая у тебя суперсила?</p>
+                <label><input type="radio" name="q2" value="A"> Добывать, создавать, двигать горы.</label><br>
+                <label><input type="radio" name="q2" value="B"> Обеспечивать стабильность и безопасность.</label><br>
+                <label><input type="radio" name="q2" value="C"> Быть гибким и оставаться в тренде.</label><br>
+                <label><input type="radio" name="q2" value="D"> Изобретать и пробовать новое.</label>
+            </div>
+            <div class="question">
+                <p>3. Твой стиль общения с другими?</p>
+                <label><input type="radio" name="q3" value="A"> Доминирующий: я устанавливаю правила.</label><br>
+                <label><input type="radio" name="q3" value="B"> Открытый: у меня все равны.</label><br>
+                <label><input type="radio" name="q3" value="C"> Деловой: я только по делу.</label><br>
+                <label><input type="radio" name="q3" value="D"> Дружелюбный: я легко нахожу общий язык.</label>
+            </div>
+            <button type="button" id="submit-btn">Узнать результат</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Ты — <span id="company-name"></span>!</h2>
+            <p id="company-description"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
